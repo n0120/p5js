@@ -7,13 +7,13 @@ function setup() {
 function draw() {
   // put drawing code here
   if(mouseIsPressed){
-    r = 0;
-    g = 0;
-    b = 0;
-  } else {
     r = RANDOM(255);
     g = RANDOM(255);
     b = RANDOM(255);
+  } else {
+    r = 255;
+    g = 255;
+    b = 255;
   }
   fill(r, g, b);
   r = 100;

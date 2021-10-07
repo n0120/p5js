@@ -1,21 +1,11 @@
+//draw a spinning torus with radius 200 and tube radius 60
 function setup() {
-  // put setup code here
-  createCanvas(windowWidth, windowHeight);
-  background(128, 128, 128);
+  createCanvas(windowWidth, windowHeight, WEBGL);
 }
 
 function draw() {
-  // put drawing code here
-  if(mouseIsPressed){
-    r = random(255);
-    g = random(255);
-    b = random(255);
-    fill(r, g, b);
-    r = 10;
-    ellipse(mouseX, mouseY, r, r);
-  } else {
-    r = 255;
-    g = 255;
-    b = 255;
-  }
+  background(255);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  torus(50, 15);
 }

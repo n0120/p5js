@@ -11,9 +11,9 @@ function draw() {
     g = 0;
     b = 0;
   } else {
-    r = 255;
-    g = 255;
-    b = 255;
+    r = RANDOM(255);
+    g = RANDOM(255);
+    b = RANDOM(255);
   }
   fill(r, g, b);
   r = 100;
